@@ -1,14 +1,14 @@
 
 /*!
  * jQuery JavaScript Library v1.4.4
- * http://jquery.com/
+ * https://jquery.com/
  *
  * Copyright 2010, John Resig
  * Dual licensed under the MIT or GPL Version 2 licenses.
- * http://jquery.org/license
+ * https://jquery.org/license
  *
  * Includes Sizzle.js
- * http://sizzlejs.com/
+ * https://sizzlejs.com/
  * Copyright 2010, The Dojo Foundation
  * Released under the MIT, BSD, and GPL Licenses.
  *
@@ -170,11 +170,11 @@ b],f.body["scroll"+b],f.documentElement["scroll"+b],f.body["offset"+b],f.documen
 
 /**
  * jQuery Once Plugin v1.2
- * http://plugins.jquery.com/project/once
+ * https://plugins.jquery.com/project/once
  *
  * Dual licensed under the MIT and GPL licenses:
- *   http://www.opensource.org/licenses/mit-license.php
- *   http://www.gnu.org/licenses/gpl
+ *   https://www.opensource.org/licenses/mit-license.php
+ *   https://www.gnu.org/licenses/gpl
  */
 
 (function ($) {
@@ -258,7 +258,7 @@ jQuery.noConflict();
 /**
  * Override jQuery.fn.init to guard against XSS attacks.
  *
- * See http://bugs.jquery.com/ticket/9521
+ * See https://bugs.jquery.com/ticket/9521
  */
 var jquery_init = $.fn.init;
 $.fn.init = function (selector, context, rootjQuery) {
@@ -655,7 +655,7 @@ Drupal.urlIsLocal = function (url) {
 
   // Consider URLs that match this site's base URL but use HTTPS instead of HTTP
   // as local as well.
-  if (protocol === 'http:' && absoluteUrl.indexOf('https:') === 0) {
+  if (protocol === 'https:' && absoluteUrl.indexOf('https:') === 0) {
     protocol = 'https:';
   }
   var baseUrl = protocol + '//' + location.host + Drupal.settings.basePath.slice(0, -1);
@@ -768,7 +768,7 @@ Drupal.displayAjaxError = function (message) {
   // Skip displaying the message if the user deliberately aborted (for example,
   // by reloading the page or navigating to a different page) while the Ajax
   // request was still ongoing. See, for example, the discussion at
-  // http://stackoverflow.com/questions/699941/handle-ajax-error-when-a-user-clicks-refresh.
+  // https://stackoverflow.com/questions/699941/handle-ajax-error-when-a-user-clicks-refresh.
   if (!Drupal.beforeUnloadCalled) {
     alert(message);
   }
